@@ -1,0 +1,28 @@
+<h1> Dice Gambling Companion<h1>
+    <h2>{{models.content1}}</h2>
+
+
+    <nav>
+        <a href="/abc/">Dice Companion</a> |
+        <a href="/rules/">Rules</a> |
+      </nav>
+
+<h4>Di Roll Round: {{round}}</h4>
+<h4> Number of Rolls: {{rolls}}<h4>
+    <hr>
+<form action="" method="post">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit">
+    {{message}}
+
+</form>
+<h3> {{answer}}</h3>
+<style>
+    h3{
+        
+        font-size: 250;
+        text-align: center;
+        position:relative;
+    }
+    </style>

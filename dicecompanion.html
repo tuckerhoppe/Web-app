@@ -1,0 +1,31 @@
+<h1> Dice Gambling Companion<h1>
+    <h2>{{models.content1}}</h2>
+    <h2>change</h2>
+
+    <nav>
+        <a href="/dicecompanion/">Dice Companion</a> |
+        <a href="/rules/">Rules</a> |
+      </nav>
+    Enter Number:<input>
+    <p><strong>Add New Inventory</strong></p>
+<form action="">
+Item ID: <input type="text" name="item_id"><br>
+Description: <input type="text" name="description"><br>
+Value: <input type="text" name="value"><br>
+Hazardous: <input type="radio" name="hazardous" value="Yes">Yes
+<input type="radio" name="hazardous" value="No" checked>No<br>
+<input type="submit" value="Add">
+</form>
+<h3> 300</h3>
+
+<p>ID: {{item.item_id}}</p>
+<p>Description: {{item.description}}</p>
+<p>Value: {{item.value|floatformat:2}}</p>
+<p>Hazardous: {{item.hazardous}}</p>
+<style>
+    h3{
+        font-size: 300;
+        text-align: center;
+        
+    }
+    </style>
